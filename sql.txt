@@ -1,0 +1,177 @@
+Structured Query Language
+SQL lets you access and manipulate databases
+record-row
+field-column
+database is an organized collection of data
+SQL keywords are NOT case sensitive
+SQL COMMANDS:
+SELECT, UPDATE, DELETE, CREATE TABLE, ALTER TABLE,DROP TABLE,INSERT INTO
+................
+SELECT * FROM CUSTOMER
+...
+SELECT CUSTOMERNAME FROM CUSTOMER
+........
+SELECT customername,city from customer
+...
+SELECT DISTINCT city from customer  [to extract distinct data present in a column]
+...
+Select count(DISTINCT country) FROM customers;  
+...
+SELECT * FROM CUSTOMER WHERE COUNTRY= 'Mexico';
+...
+SELECT * FROM CUSTOMER WHERE COUNTY = 'MEXICO' and CUSTOMERID=1;
+...
+in where clause we can use
+..
+< > <= >= BETWEEN 
+...
+SELECT * FROM Customers WHERE CustomerID IN (50,60,78);
+...
+SELECT * FROM Customers WHERE City LIKE '%s';
+...
+SELECT * FROM Customers WHERE Country='Germany' AND (City='Berlin' OR City='München');
+...
+order by clause is used to sort the result-set in ascending order or descending order
+The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
+...
+SELECT * FROM Customers
+ORDER BY Country DESC;
+...
+insert into statement is used to insert new recors into a table
+...
+It is not possible to test for NULL values with comparison operators, such as =, <, or <>.
+We will have to use the IS NULL and IS NOT NULL operators instead.
+...
+select customername,city,address  from customers where customername is not  null
+...
+The UPDATE statement is used to modify the existing records in a table
+...
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+WHERE CustomerID = 1;
+...
+DELETE FROM customers where city='bengaluru'
+...
+DELETE FROM customers will delete all the records from the customer table
+...
+The SELECT TOP clause is used to specify the number of records to return.
+...
+ MySQL supports the LIMIT clause to select a limited number of records, while Oracle uses ROWNUM.
+
+SELECT TOP -sql server
+LIMIT - MySQL
+ROWNUM-Oracle
+...
+The MIN() function returns the smallest value of the selected column.
+The MAX() function returns the largest value of the selected column.
+The COUNT() function returns the number of rows that matches a specified criteria.
+The AVG() function returns the average value of a numeric column.
+The SUM() function returns the total sum of a numeric column.
+...
+Note: It requires double quotation marks or square brackets if the alias name contains spaces:
+...
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+...
+The GROUP BY statement is often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.
+...
+mainly used with aggregate fuctions 
+
+ lists the number of customers in each country. Only include countries with more than 5 customers
+select employees.lastname,count(orders.orderid)
+from (orders inner join employees on Orders.EmployeeID = Employees.EmployeeID)
+group by employees.lastname
+where lastname="Davolio" OR lastname="Fuller"
+having count(orders.orderid)>25
+
+....
+CREATE DATABASE testdb;
+DROP DATABASE TESTDB;
+
+...
+create table tablename (columnname1 datatype,columnname1 datatype.....);
+drop table tablename
+alter table tablename   add columnname datatype
+...
+NOT NULL-the NOT NULL constraint enforces a column to NOT accept NULL values.
+UNIQUE-The UNIQUE constraint ensures that all values in a column are different.
+ 
+....
+ID INT NOT NULL UNIQUE ___ORACLE
+ID INT NOT NULL
+UNIQUE(ID) ----mysql
+...
+primary key-
+...
+The PRIMARY KEY constraint uniquely identifies each record in a table.
+...
+collection of organized data
+
+select usn ,age,name
+from student 
+where usn=3;
+...
+proection queries-perticular column
+selection queries-perticular row 
+
+
+jsp and jvs
+||  operator
+
+
+web content-jsp file
+start the server and deploy the project
+
+<%  java source code %>  
+I am not feeling well so, I want to go home today in the second half 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
