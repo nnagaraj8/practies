@@ -1,0 +1,209 @@
+create entity class
+@Autowired
+plain old java object
+@RequestMapping(method=GET) 
+
+springboot has an embedded tomcat
+@EnableEurekaServer
+H2 in-memory database
+
+
+import java.util.Scanner;
+Scanner scanner=new Scanner(System.in);
+entity class
+controller class
+repository is an interface which extends mongo or JPArepository
+
+
+it contains projects details required to
+while executing
+
+
+@Autowired    dependency injection is based on principle of inversion of control
+
+
+ConfigurableApplicationContext context = SpringApplication.run(DemoApplication.class, args);
+
+
+
+im tkg a dy of tdy de 2 a mdl emry
+
+
+
+microservices-here we are considering each feature as a service
+
+
+entity-controller-repository
+mongodb is a nosql database
+i hv gone through the java full stack 
+traning provided by dxc .after that traning got into iot team where i was 
+working on an application which tracks the asset order
+
+
+spring starter project
+in model class use
+Entity for mysql
+Document for mongodb   @Document(collection="collectionname")
+repository should be an interface which extends JPArepository or MongoRepository here we have to 
+pass the Model class name and primary id type 
+if we are posting data public String posting(RequestBody Book book){
+repo.save(book)
+model-controller-repository-extends mongorepository
+in application class we have @SpringBootApplication
+spring mvc-is a java framework it follows model-view- controller design pattern
+in mvc view uses jsp jstl for creating view -java server pages
+dependency injection-3 classes
+1. client class
+2.service class
+3.Injector class
+
+3 types of DI
+1.constructor
+2.setter
+3.Interface
+
+in pom.xml we include all the dependencies
+ConfigurableApplicationContext 
+ 
+
+
+creating a web application using rest-   
+
+create a (WebApp) folder in src-main-WebApp  
+create a jsp file inside the folder course.jsp 
+this is  view which an user can see  
+jsp file to servlet 
+model-controller-repository-mong
+@Auotwired 
+jsp-view 
+angular for the view
+if u give input type as
+methodName(@RequestParam("cid") String cus
+''''''''''''''''''''''''''''''''''''''''''
+basically we are trying to create a web application
+1. create a springboot application
+2. create a model class -custimer.java
+3.create a jsp file inside webapp folder
+4. in jsp file indise the body tag create a form 
+5. create another class and name it as a controllerclass
+5.add jasper dependency in pom.xml to convert jsp to servlet
+6.add server.port in application.properties  
+............................
+in controller class return jsp file for requestmapping which contains a form
+in memory database is H2 database   
+if u declare  a model class as @Entity which creates a table in database while executing
+......................................
+7.To save data into database create an repository which is an interface and it extends crudrepository or jparepository
+
+RequestMapping annotation is used to map web requests onto specific handler classes and/or handler methods.
+
+
+
+it will send the data either in the form or json or the xml format 
+REST-Representational State Transfer -Create Read Update Delete operations
+create-post
+read-get
+update-put
+delete-delete
+                    
+......................................................
+json-JavaScript Object Notation
+......................................................
+rest api-
+i want to get temperature at any place-server
+REST is a stateless client -server architecture
+hen compared to SOAP web services, these are lightweight and doesn’t follow any standard.
+We can use XML, JSON, text or any other type of data for request and response.
+ whereas SOAP works with XML only
+.....................................................
+..............
+web service is a way for two machines to communicate with each other over a network
+
+..............
+Data structure means organizing the data in computer so that it can be used effectively 
+what is the difference between data structure and collecction framework
+ 
+.....................................
+json -java script object notation -json is a format in which we can transfer data from client to server and vice versa 
+if a client makes a asynchronous request to server then server will send a response to that request.
+the response can be in any form ( html,text,json,xml).
+if the response is in json format it is easy to fetch the data from it
+..........................................
+http- when you type url in browser and hit enter it will make a request to web server .server response with a resource.
+..........................................
+
+
+we will look for 
+xml  - e ml
+
+............
+data structure
+'''''''''''
+1.list
+2.arrayList
+3.
+ i will select     we will keep a disscussion for every quarte
+
+api
+rest api
+web server
+application server
+web service
+cubernet
+jdk-to know jdk is installed type javac in command prompt.
+to know the version of it type java -version in command prompt 
+we have  to install the jdk from oracle official website
+
+......
+@SpringbootApplication encapsulates @Configuration @EnableAutoConfiguration @ComponentScan
+used to declare main class of SpringbootApplication 
+........
+@EnableAutoConfiguration Spring Boot looks for auto-configuration beans on its classpath and automatically applies them.
+........
+
+NullPointerWException
+ClassCastException
+    ArrayList<String> alias= new ArrayList<String>(); 
+index and the controller mainly to apply security constraints to jsp pages
+loopme as well so that i can check this one
+
+AppSecurityConfig tag is used to provide
+there will be an configuration file
+AbstractSecurityWebApplicationInitializer extend this class
+public class SecurityWebApplicationInitializer  
+    extends AbstractSecurityWebApplicationInitializer {  
+  
+}  
+The @Requestmapping annotation is used to map the class with the specified URL name
+i got updates from my manager he has back to back meetings so he will meet us end of the day
+any updates from manager?yeah tell me whatall the documents i need to include if i get
+whatever u did is it still rung?
+HTTP request-dispatcher servlet is a front end controller 
+-controller
+-jsp
+-HTTP response 
+we will see how to take it forward i will talk to prasad then we will see how to take it forward.
+................
+spring security framework is used to create secured enterprise application by providing authorization and authentication
+spring security 3.0   spring boot version 2.2.1  tomcat version is 9
+in web application user can create read the articles a if u tell some configuration trust me
+............
+authentication is who u are mainly the username and the password
+autherizatuion is the role
+
+.........
+1.create a springboot starter project
+2.select web-jpa-security
+3.create a controller class       
+   3.1 annotate controller class with @Controller 
+   3.2 create a method which return a home.jsp file
+4.create a folder (webapp) under src-main where we have to put all our jsp pages
+5.create a jsp file named home.jsp inside webapp
+6.to work with jsp we have to add jasper dependency in pom.xml file
+7.to add spring security module to spring boot project add springboot-starter-security dependency to your project
+
+8.create a class to provide configuration which extends WebSecurityConfigureAdapter 
+
+  8.1 create a method with return type AuthenticationProvider
+  8.2 create an object of DaoAuthenticationProvider
+9.create a table in db .
