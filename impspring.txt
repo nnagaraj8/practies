@@ -1,0 +1,277 @@
+mvn clean and mvn install  to work with mave nwe need to download maven and setup environment
+
+create a java project
+end to end/angular and springboot
+add hibernate and ojdbc6-driver-jar
+create packages and classes
+com.dxc.domain-ProductDetails.java
+com.dxc.test-TestData.java
+com.dxc.configuration-create mapping file and configuration file
+database dialect-Oracle 10g 
+Drivver class- oracle.jdbc.driver.OracleDriver
+....
+in spring we are using maven build tool so just need to define dependencies  in pom.xml
+file.
+minimal requirement in pom.xml is groupid,artifactid ,version
+maven is a project management tool
+
+remote library we need to include in pom.xml
+
+deploys artifact to the remote repository
+
+clean up after build.
+compiles java source code.
+deploys the artifact to the remote repository.
+installs the built artifact into the local repository.
+
+..............
+create one end to end application
+ioc container
+dependency injection
+oops concepts
+J2EE-servlets and jdbc
+........................................
+We know that Spring is a java based framework. 
+But why do we need a framework when same application can be done using j2ee i.e.
+servlets and jdbc. It was done in the same way before frameworks, but in this line of code which a developer has to write was much more making it much complex. In developing this kind of application it needs long period of time and excessive effort. So to remove this much kind of effort we turn to frameworks where all these issues are minimised. Thus developer will be investing in the task and not in the technology.
+
+Now we know benefit of a frameworks, let us discuss the advantage of spring 
+framework. Spring is known for its many features, let us discuss some its 
+features. One is IoC which is inversion of control and other is DI which is
+dependency injection. In spring due to Ioc we do not have look up for objects, 
+instead they are provided by IoC. DI is the cherry on top which is provided by Spring. Other then spring everywhere we try to find the objects and their dependencies i.e. we try to pull congiguration, but DI is a push configuration means it pushes congfiguration into application objects. Thus they are making quite efficient environment for developers.
+
+Apart from these spring also provides various modules like Spring MVC,
+ Spring Security, Spring ORM, Spring Core which comes in handy for the developer
+whose whole effort goes to investing in the task i.e. application and not in setting configuration. Also it provides integration with other frameworks in a much easier way. Now i think it should be clear why developers are opting for this Spring framework.
+
+
+in hibernate as well we can either have mapping file or annotations
+here in spring as well we can either havexml based configuration or annotation based configuration
+there are some containers they are responsible for creating an object and inject them into ur project for that
+we have to do a lot of configuration earlier days we used to create a xml file and used to give all the dependencies
+why do we use dependency injection is mainly to achieve loosecoupling
+
+maven can be used for many purpose but the main purpose is to get dependencies it is also used for 
+instead of downloading all the dependencies u just have to create a maven project and 
+define all the dependencies in pom.xml file .maven will dowload the dependencies from 
+remote repository.
+invertsion of control
+dependecy injection
+the overall flow
+jsp and servlet
+if u create a java project that means it is a simple core java project
+archtype quickstart to create a desktop applixation 
+archtype webapp to create a web application if u are using core java application then it is a jar file
+and if u r using a web application then it is a war file
+if u using a simple java project just create a java application
+getBean is a method which we can use from either BeanFactory or ApplicationContext
+if u r creating an enterprise application use ApplicationContext bcz applicationContext is a super set of 
+BeanFactory
+create a xml file and mention which class object need to be called when vehicle keyword is passed .
+in xml file use beans tag inside that use bean tag in that write id property
+
+we have to write the definition of beans tag
+
+
+first create a class and write a method in it
+create another class with the same method in it
+create an interface with the same method. classes extends those
+in main class if u create an object of 1 class it is difficult to call the method of another class
+so we need to go for spring bean  use either aplicationcontext or beanfactory
+but applicationcontext is a super class of beanfactory
+so ApplicationContext context =  new ClassPathXmlApplicationContext();
+Vehicles obj = (Vehciels)context.getBean();
+Create an xml fiel with as follows,
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+<bean  id="vehicle" class="com.dxc.dtc.Customer">
+</bean>
+</beans>
+ 
+ always create an object of child and the type of parent
+if we declare a class as a component we no need to define beans in the configuratuion class
+that means we need object of those classes
+also need to declare @componentscan tag in config file
+@Primary
+@Qualifier
+...
+created maven project
+add spring dependency in pom.xml(spring core,spring web,spring expression)
+in app.java class created object of beanfactory
+ in xml
+....
+ApplicationContext context = new ClassPathApplicationContext(AppConfig.class);
+.....
+ if u want to use maven download maven and set hte path in eviroment set up.
+....
+super 
+this 
+oops
+collection
+data structure
+spring containers- beanfactory applicationcontext
+dependency injection-constructor injection and setter injection
+<property   name ="address" ref="add"><property>
+/\/\/\/\/\/\//\/\/\/\/\/\//\/\/\/\/\//\/\/\/\/\/\//\//\/\/
+
+Inversion of control (IoC) is the principle where the control flow
+ of a program is inverted: instead the programmer controls the flow 
+of a program, the external sources 
+(framework, services, other components) take control of it. As the 
+name implies Inversion of control means now we have inverted the control of
+ creating the object from our own using new operator to container or framework.
+ Now it’s the responsibility of container to create object as required.
+there are two types of containers
+1.bean factory
+2.Application context
+
+dependency lookup makes the code tightly coupled.
+if resource is changed we need to perform a lot of modifications in the code.
+.....
+singleton class is a class which can have only one object at a time
+in general we can create multiple objects of a class. 
+
+allowing only 1 instance of a class is known as singleton class.
+design patterns in java
+   
+public  access level of public modifier is everywhre  
+private within the class
+protected within the same package and outside the package through child class.
+default witin the package.
+...
+static:static variables- memory is allocated for static variables only once
+when there is a common property for all the objects then make use of static variable.
+static method -which belongs to class rather than an instance of a class.
+static block- is executed before the main method executes
+ ...
+super
+...
+this
+....
+oops
+....
+di
+...
+array:group of like typed variables
+data structure
+fixed size
+arrays in java work differently than they do in c/c++
+if a class is not extending any class that mean s its super class is Object class.
+collections 
+datastructure
+hibernate
+end to end springboot
+microservices
+
+   int  a[]
+   int[] a = new a[5];
+   
+collections
+collection is a group of object represented as a single unit.c
+
+collection provides an arcitecture ti store and manipulate group of objects.
+
+
+the root interface is 
+--Iterable
+-- Collection interface extends iterable
+==set queue list extends collection interface
+--list interface i mplementation is provided by 3 classes
+1. Arraylist
+2.LinkedList
+3.Vector
+-- queue implementation is provided by priority queue
+--set implemetation is provided by hashset and linked hashset
+what is the maeaning of thread safe?
+.............
+array-fixed size
+arraylist size is dynamic
+arraylist can have duplicate values and accessed using index
+array length using length method
+arraylist length using size() method
+Array use assignment operator to store elements but ArrayList use add() to insert elements.
+ You can not store primitives in ArrayList, it can only contain Objects. While Array can contain both primitives and Objects in Java.
+
+ArrayList<String> list1 = new Arraylist<String>();---this list1 can store String objects
+ArrayList list1= new ArrayList();---list1 can store any type of object
+root class of any class is Object class.
+
+Iterator<String> itr= list1.iterator();
+wile(itr.hasnext()){
+syso(itr.next()):
+}
+......
+queue
+queue is always FIFO approach
+ArrayList<String> arr = new ArrayList<String>();
+PriorityQueue<Integer> q= new PriorityQueue<Integer>();
+priority queue sorts the data in ascending order
+there are mainly 2  operations,
+1. peeking-finding the head of the queue
+2.polling-removing the head of the queue
+..........
+
+set-hashset,linked hash set,tree set
+set cannot contain duplicate values
+hashset uses hashing technique to storeonly unique values
+linkedhashset stores the data but it also maintains the order of insertion
+Treeset uses a tree for storage in tree set data are stored in ascending order 
+
+hashset-data is unique,data is not in the order due to hashing
+
+linkedhashset-maintains the insetion order
+treeset- data is unordered but sorted in ascending order
+array static
+so we go for arraylist
+arraylist is dynamic
+linkedlist 
+
+
+
+................
+microservice architecture
+.............
+monolithic archtecture:
+actuator -monitor and manage our application
+Eureka discovery- to register the service in eureka server
+JPA-to save or retrieve data
+lombok-to reduce the boiler plate code
+
+@EnableDiscoveryClient to
+
+
+version control tool
+
+git nit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
